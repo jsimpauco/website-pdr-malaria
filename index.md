@@ -1,23 +1,21 @@
-# Predicting Drug Resistance in Malaria Using Language Models
+# Introduction
 
-## Introduction
+# Methods
 
-## Methods
+## Dataset
 
-### Dataset
+## Model Architechture
 
-### Model Architechture
+## Training and Fine-Tuning
 
-### Training and Fine-Tuning
+## Correlation between mutations and drug resistance
 
-### Correlation between mutations and drug resistance
+# Results
 
-## Results
+# Conclusion/Discussion
 
-## Conclusion/Discussion
+# Appendix
 
-## Appendix
+# Contributions
 
-## Contributions
-
-### References
+## References
