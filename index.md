@@ -1,3 +1,5 @@
+# Predicting Drug Resistance in Malaria Using Language Learning Models
+
 ## Introduction
 Our model in Quarter 1 focused on leveraging unsupervised machine learning to predict
 genetic variation in DNA sequences. By applying natural language processing techniques,
@@ -79,6 +81,8 @@ NSP tasks.
 We trained several models, a selection of which can be seen in the table. Our models that are labeled as being large were trained off approximately 80% of our training data, approximately 36000 pieces of data while the small models were trained for fewer epochs from 2000 pieces of data. We were able to achieve a 40% accuracy with our large models and a 99% accuracy with our small model.
 
 Each of these models have the ability to produce a series of probabilities that represent the likelihood of a nucleotide for each position in a sequence. By grabbing the maximum probability for each position, we get a prediction for what nucleotide we think should occupy that position. In the case shown by the figures below, for positions 20-29 of the sequence we predict the input sequence to be \"CCCCCCAAAC\". 
+
+![Sequence Prediction](images/prob.png)
 
 
 ## Conclusion/Discussion
