@@ -116,14 +116,10 @@ Computational demands also played a role—training on full-genome datasets is r
 
 Beyond malaria, this model could be fine-tuned for other pathogens, including viruses and bacteria, expanding its role in infectious disease research. Additionally, incorporating biological and epidemiological data, like patient treatment outcomes or geographic resistance patterns, could improve the model’s ability to track and predict drug-resistant strains in real-world settings. By tackling these limitations, we hope to refine our approach, improve global malaria surveillance, and ultimately help in the fight against drug-resistant infections.
 
-## Appendix
-Project Proposal Link: https://drive.google.com/file/d/1JI9a_CTQo_Bc5oKF_KfkNalIzrcIxUyG/
-view?usp=sharing
 
-## Contributions
-• Annie: Built custom BERT model for project, helped clean data.  
-• Jared: Scripted the project, organized GitHub repository, worked on website.  
-• Aryan: Worked on the Statistical Analysis of the project, Cleaned data, and worked on the website.  
-• Aditya: Worked on project report, worked on the project poster.  
+## References
+[1] Malaria Facts & Statistics | Medicines for Malaria Venture. MMV: Medicines for Malaria Venture. (n.d.). https://www.mmv.org/malaria/malaria-facts-statistics 
 
-### References
+[2] Murray, C. J., Rosenfeld, L. C., Lim, S. S., et al. Global malaria mortality between 1980 and 2010: A systematic analysis - the lancet. The Lancet. https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)60034-8/fulltext
+
+[3] Fidock, D. A. (n.d.). Defining the role of PfCRT in Plasmodium falciparum chloroquine resistance. PubMed. Retrieved March 9, 2025, from https://pubmed.ncbi.nlm.nih.gov/15813727/
