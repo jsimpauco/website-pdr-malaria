@@ -107,9 +107,23 @@ For example, Patrick G Bray et al. in “Defining the role of PfCRT in Plasmodiu
 
 Additionally, although we trained our model off of Malaria data, this model can be trained off of any type of data which means it may be able to fine-tune to other types of diseases. In the end, by calculating accuracy and by extension the predictability of new DNA sequences we hope that our model will be able to decrease the amount of time it takes to create new effective medication for malaria, thereby decreasing the amount of deaths caused by malaria.
 
+## Limitations & Future Work
+While our model shows promise in identifying drug resistance-related mutations, there are still a few challenges to address.
+
+One key limitation is that our model is trained primarily on the P. falciparum 3D7 strain, which means it might not work as well on malaria strains from different regions. To improve generalization, future versions should incorporate multi-strain datasets, making the model more adaptable to real-world genetic diversity. Another challenge is that we’re using sequence predictability as a stand-in for mutation detection. While our results suggest that lower confidence predictions align with drug resistance mutations, this doesn’t necessarily prove causation. To confirm whether these mutations actually cause resistance, we’d need additional experimental validation, such as lab tests or protein structure analysis.
+
+Computational demands also played a role—training on full-genome datasets is resource-intensive, even with a BERT-based transformer architecture. Future work could explore lighter models, such as using model distillation or combining transformers with CNNs, to balance efficiency and accuracy.
+
+Beyond malaria, this model could be fine-tuned for other pathogens, including viruses and bacteria, expanding its role in infectious disease research. Additionally, incorporating biological and epidemiological data, like patient treatment outcomes or geographic resistance patterns, could improve the model’s ability to track and predict drug-resistant strains in real-world settings. By tackling these limitations, we hope to refine our approach, improve global malaria surveillance, and ultimately help in the fight against drug-resistant infections.
 
 ## Appendix
+Project Proposal Link: https://drive.google.com/file/d/1JI9a_CTQo_Bc5oKF_KfkNalIzrcIxUyG/
+view?usp=sharing
 
 ## Contributions
+• Annie: Built custom BERT model for project, helped clean data.
+• Jared: Scripted the project, organized GitHub repository, worked on website.
+• Aryan: Worked on the Statistical Analysis of the project, Cleaned data, and worked on the website.
+• Aditya: Worked on project report, worked on the project poster.
 
 ### References
