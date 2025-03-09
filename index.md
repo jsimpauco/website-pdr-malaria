@@ -1,6 +1,24 @@
 # Predicting Drug Resistance in Malaria Using Language Models
+### Authors -  Aditya Arun, Annie Pham, Aryan Shah, Jared Simpauco
 
 ## Introduction
+Our model in Quarter 1 focused on leveraging unsupervised machine learning to predict
+genetic variation in DNA sequences. By applying natural language processing techniques,
+particularly transformer-based models like DNA-BERT, we aimed to identify significant motifs and potential mutations in genomic data. This approach provided valuable insights into
+how sequence variations can influence biological function, paving the way for computational methods to detect and interpret genetic anomalies efficiently. However, while our
+previous work primarily explored DNA motif detection in a broad genomic context, we now
+shift our focus toward a more impactful application—predicting mutations in the malaria
+parasite, which is known to develop resistance to antimalarial drugs through genetic mutations.
+Building on our previous experience with transformer models, our current project investigates the predictability of sequencing and mutations in P. falciparum using a BERT-based
+model. We want to assess how well these models can forecast genomic sequences and detect
+potential mutations, particularly in regions associated with drug resistance. By preprocessing the reference genome of the P. falciparum 3D7 strain, segmenting it into fixed-length
+k-mers, and analyzing nucleotide composition, k-mer frequency, and GC content, we establish a structured dataset for transformer-based learning. Additionally, we compare our
+model’s performance to DNABERT, a transformer model pre-trained on human DNA, to
+evaluate its effectiveness in capturing genomic patterns in malaria.
+Our project extends the foundational concepts from our Quarter 1 research, transitioning
+from general genetic variation analysis to a real-world application in infectious disease genomics. By applying machine learning to malaria genomics, we hope to contribute to the
+early identification of mutations linked to drug resistance, ultimately aiding global efforts
+in combating malaria through improved surveillance and treatment strategies.
 
 ## Methods
 
@@ -39,19 +57,20 @@ To predict mutations in Plasmodium falciparum and analyze genomic sequences, we 
 core components and their roles in the architecture.
 
 Our model builds on the Bidirectional Encoder Representations from Transformers (BERT) architecture, which has proven effective in NLP and has been adapted for genomic data. The main components of our custom Context-Guided BERT architecture are as follows:
-	1. Embedding layers
-	2. Multi-Head Self-Attention Mechanism
-	3. Feed-Forward Layers
+
+1\. Embedding layers
+2\. Multi-Head Self-Attention Mechanism
+3\. Feed-Forward Layers
 
 To convert raw DNA sequences into a numerical format suitable for transformer processing,
 we use 3 types of embeddings which form the input representation fed into the transformer
 model.
 
-	• Token Embeddings - Each nucleotide (A, T, C, G) is mapped to a unique index in the
-	vocabulary, similar to word embeddings in NLP.
-	• Positional Embeddings - Since transformers lack inherent sequence order, we incorporate sinusoidal position encodings to retain positional information.
-	• Segment Embeddings - To help distinguish between different sequence chunks when
-	training on paired sequences
+• Token Embeddings - Each nucleotide (A, T, C, G) is mapped to a unique index in the
+vocabulary, similar to word embeddings in NLP.
+• Positional Embeddings - Since transformers lack inherent sequence order, we incorporate sinusoidal position encodings to retain positional information.
+• Segment Embeddings - To help distinguish between different sequence chunks when
+training on paired sequences
 
 ### Training and Fine-Tuning
 The model is trained using negative log-likelihood loss (NLLLoss) for both the MLM and
