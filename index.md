@@ -46,6 +46,8 @@ and redundancy in training. Additional genomic features such as nucleotide compo
 k-mer frequency (3-mers), and GC content were computed for each chunk to analyze the
 statistical properties of the dataset.
 
+![Preview of Genomic Dataset](images/Data.png)
+
 The processed dataset provides a structured input for training the BERT-based language
 model, enabling it to learn the contextual relationships between nucleotide sequences. Future iterations of the project may explore training on additional Plasmodium species or
 incorporating resistance-associated mutations and using classification methods to further
@@ -80,9 +82,11 @@ NSP tasks.
 ## Results
 We trained several models, a selection of which can be seen in the table. Our models that are labeled as being large were trained off approximately 80% of our training data, approximately 36000 pieces of data while the small models were trained for fewer epochs from 2000 pieces of data. We were able to achieve a 40% accuracy with our large models and a 99% accuracy with our small model.
 
+![Comparison of Model Accuracy](images/Comp.png)
+
 Each of these models have the ability to produce a series of probabilities that represent the likelihood of a nucleotide for each position in a sequence. By grabbing the maximum probability for each position, we get a prediction for what nucleotide we think should occupy that position. In the case shown by the figures below, for positions 20-29 of the sequence we predict the input sequence to be \"CCCCCCAAAC\". 
 
-![Sequence Prediction](images/prob.png)
+![Sequence Prediction](images/Prob.png)
 
 
 ## Conclusion/Discussion
