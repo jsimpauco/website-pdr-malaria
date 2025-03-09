@@ -121,9 +121,9 @@ Project Proposal Link: https://drive.google.com/file/d/1JI9a_CTQo_Bc5oKF_KfkNalI
 view?usp=sharing
 
 ## Contributions
-• Annie: Built custom BERT model for project, helped clean data.
-• Jared: Scripted the project, organized GitHub repository, worked on website.
-• Aryan: Worked on the Statistical Analysis of the project, Cleaned data, and worked on the website.
-• Aditya: Worked on project report, worked on the project poster.
+• Annie: Built custom BERT model for project, helped clean data.  
+• Jared: Scripted the project, organized GitHub repository, worked on website.  
+• Aryan: Worked on the Statistical Analysis of the project, Cleaned data, and worked on the website.  
+• Aditya: Worked on project report, worked on the project poster.  
 
 ### References
