@@ -47,6 +47,7 @@ k-mer frequency (3-mers), and GC content were computed for each chunk to analyze
 statistical properties of the dataset.
 
 ![Preview of Genomic Dataset](images/Data.png)
+*Figure 1: Preview of Genomic Dataset*
 
 The processed dataset provides a structured input for training the BERT-based language
 model, enabling it to learn the contextual relationships between nucleotide sequences. Future iterations of the project may explore training on additional Plasmodium species or
@@ -74,8 +75,11 @@ vocabulary, similar to word embeddings in NLP.
 training on paired sequences.  
 
 ### Training and Fine-Tuning
-The model is trained using negative log-likelihood loss (NLLLoss) for both the MLM and
-NSP tasks.
+The model is trained using negative log-likelihood loss (NLLLoss) for both the MLM (Masked Learning Model) and
+NSP (Next Sentence Prediction) tasks.
+
+![Comparison of Model Accuracy](images/Model.png)
+*Figure 2: BERT Based MLM Pipeline*
 
 ### Correlation between mutations and drug resistance
 
@@ -83,10 +87,13 @@ NSP tasks.
 We trained several models, a selection of which can be seen in the table. Our models that are labeled as being large were trained off approximately 80% of our training data, approximately 36000 pieces of data while the small models were trained for fewer epochs from 2000 pieces of data. We were able to achieve a 40% accuracy with our large models and a 99% accuracy with our small model.
 
 ![Comparison of Model Accuracy](images/Comp.png)
+*Figure 3: Comparison of Model Accuracy*
+
 
 Each of these models have the ability to produce a series of probabilities that represent the likelihood of a nucleotide for each position in a sequence. By grabbing the maximum probability for each position, we get a prediction for what nucleotide we think should occupy that position. In the case shown by the figures below, for positions 20-29 of the sequence we predict the input sequence to be \"CCCCCCAAAC\". 
 
 ![Sequence Prediction](images/Prob.png)
+*Figure 4: Sequence Prediction*
 
 
 ## Conclusion/Discussion
