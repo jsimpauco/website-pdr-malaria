@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Predicting Drug Resistance in Malaria Using Language Learning Models"
+description: "Authors - Aditya Arun, Annie Pham, Aryan Shah, and Jared Simpauco"
+---
+
 ## Introduction
 Our model in Quarter 1 focused on leveraging unsupervised machine learning to predict
 genetic variation in DNA sequences. By applying natural language processing techniques,
