@@ -1,6 +1,3 @@
-# Predicting Drug Resistance in Malaria Using Language Models
-### Authors -  Aditya Arun, Annie Pham, Aryan Shah, Jared Simpauco
-
 ## Introduction
 Our model in Quarter 1 focused on leveraging unsupervised machine learning to predict
 genetic variation in DNA sequences. By applying natural language processing techniques,
@@ -58,19 +55,19 @@ core components and their roles in the architecture.
 
 Our model builds on the Bidirectional Encoder Representations from Transformers (BERT) architecture, which has proven effective in NLP and has been adapted for genomic data. The main components of our custom Context-Guided BERT architecture are as follows:
 
-1\. Embedding layers
-2\. Multi-Head Self-Attention Mechanism
-3\. Feed-Forward Layers
+1\. Embedding layers  
+2\. Multi-Head Self-Attention Mechanism  
+3\. Feed-Forward Layers  
 
 To convert raw DNA sequences into a numerical format suitable for transformer processing,
 we use 3 types of embeddings which form the input representation fed into the transformer
 model.
 
 • Token Embeddings - Each nucleotide (A, T, C, G) is mapped to a unique index in the
-vocabulary, similar to word embeddings in NLP.
-• Positional Embeddings - Since transformers lack inherent sequence order, we incorporate sinusoidal position encodings to retain positional information.
+vocabulary, similar to word embeddings in NLP.  
+• Positional Embeddings - Since transformers lack inherent sequence order, we incorporate sinusoidal position encodings to retain positional information.  
 • Segment Embeddings - To help distinguish between different sequence chunks when
-training on paired sequences
+training on paired sequences.  
 
 ### Training and Fine-Tuning
 The model is trained using negative log-likelihood loss (NLLLoss) for both the MLM and
